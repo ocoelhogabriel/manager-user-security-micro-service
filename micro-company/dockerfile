@@ -1,0 +1,20 @@
+# Estágio 1: Build da aplicação com Maven e Java 21
+FROM maven:3.9-eclipse-temurin-21 AS build
+
+WORKDIR /app
+
+COPY pom.xml .
+COPY src ./src
+
+# O -DskipTests é importante para o build dentro do Docker
+RUN mvn clean package -DskipTests
+
+# Estágio 2: Imagem final, otimizada e leve
+FROM eclipse-temurin:21-jre-jammy
+
+WORKDIR /app
+
+# Copia apenas o .jar gerado do estágio de build para a imagem final
+COPY --from=build /app/target/*.jar app.jar
+
+ENTRYPOINT ["java", "-jar", "app.jar"]

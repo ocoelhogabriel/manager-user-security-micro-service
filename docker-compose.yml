@@ -1,20 +1,17 @@
-version: '3.8'
+# A linha "version" não é mais necessária e foi removida.
 
-# Bloco de serviços, onde cada container é definido
 services:
-
-  # --- BANCO DE DADOS E MENSAGERIA (IMAGENS PRONTAS) ---
   postgres:
     image: postgres:16
     container_name: postgres
     environment:
       - POSTGRES_USER=user
       - POSTGRES_PASSWORD=password
-      - POSTGRES_DB=company_db # DB inicial para o micro-company
+      - POSTGRES_DB=company_db
     ports:
-      - "5432:5432" # Mapeia a porta do container para sua máquina local
+      - "5432:5432"
     volumes:
-      - postgres_data:/var/lib/postgresql/data # Garante que os dados não se percam
+      - postgres_data:/var/lib/postgresql/data
     networks:
       - micro-network
 
@@ -22,17 +19,17 @@ services:
     image: rabbitmq:3.10-management-alpine
     container_name: rabbitmq
     ports:
-      - "5672:5672"  # Porta do protocolo AMQP
-      - "15672:15672" # Porta da UI de gerenciamento
+      - "5672:5672"
+      - "15672:15672"
     networks:
       - micro-network
 
-  # --- SERVIÇOS DE INFRA (IMAGENS CONSTRUÍDAS POR NÓS) ---
   config-server:
     build:
-      context: ${PROJECT_ROOT}/infra/config-server # Caminho absoluto para o contexto
-      args: # Argumentos que vamos passar para o Dockerfile
-        - CONFIG_REPO_PATH=${PROJECT_ROOT}/config-repo # Caminho absoluto para o config-repo
+      # Mantém a versão corrigida com a variável de ambiente.
+      context: ${PROJECT_ROOT}/infra/config-server
+      args:
+        - CONFIG_REPO_PATH=${PROJECT_ROOT}/infra/config-server/config-repo # Ajustado para a nova localização
     container_name: config-server
     ports:
       - "8888:8888"
@@ -41,34 +38,33 @@ services:
 
   eureka-server:
     build:
-      context: ./infra/eureka-server
+      # AJUSTE: Usa a variável de ambiente para garantir o caminho absoluto.
+      context: ${PROJECT_ROOT}/infra/eureka-server
     container_name: eureka-server
     ports:
       - "8761:8761"
     depends_on:
-      - config-server # Garante que o config-server suba antes do eureka-server
+      - config-server
     networks:
       - micro-network
-
 
   micro-company:
     build:
-      context: ./micro-company # Aponta para a pasta com o Dockerfile do serviço
+      # AJUSTE: Usa a variável de ambiente para garantir o caminho absoluto.
+      context: ${PROJECT_ROOT}/micro-company
     container_name: micro-company
     ports:
-      - "8081:8081" # Expõe a porta 8081 para você acessar da sua máquina
+      - "8081:8081"
     networks:
       - micro-network
-    depends_on: # Garante que o micro-company só suba depois da infraestrutura essencial
+    depends_on:
       - postgres
       - eureka-server
       - config-server
 
-# Bloco de volumes para persistência de dados
 volumes:
   postgres_data:
 
-# Bloco de redes para permitir a comunicação entre os containers pelo nome do serviço
 networks:
   micro-network:
     driver: bridge
