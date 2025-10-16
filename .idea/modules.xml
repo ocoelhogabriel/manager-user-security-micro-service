@@ -2,9 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/infra/eureka-server/eureka-server.iml" filepath="$PROJECT_DIR$/infra/eureka-server/eureka-server.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/manager-user-security-micro-service.iml" filepath="$PROJECT_DIR$/.idea/manager-user-security-micro-service.iml" />
-      <module fileurl="file://$PROJECT_DIR$/micro-company/micro-company.iml" filepath="$PROJECT_DIR$/micro-company/micro-company.iml" />
     </modules>
   </component>
 </project>

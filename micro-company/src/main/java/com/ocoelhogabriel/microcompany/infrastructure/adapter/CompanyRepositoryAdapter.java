@@ -1,8 +1,10 @@
 package com.ocoelhogabriel.microcompany.infrastructure.adapter;
 
 import com.ocoelhogabriel.microcompany.domain.entity.Company;
+import com.ocoelhogabriel.microcompany.domain.repository.CompanyRepository;
 import com.ocoelhogabriel.microcompany.infrastructure.persistence.entity.CompanyEntity;
 import com.ocoelhogabriel.microcompany.infrastructure.persistence.repository.CompanyJpaRepository;
+import com.ocoelhogabriel.microcompany.interfaces.mapper.CompanyMapper;
 import org.springframework.stereotype.Component;
 
 import java.util.List;
@@ -38,9 +40,7 @@ public class CompanyRepositoryAdapter implements CompanyRepository {
 
     @Override
     public List<Company> findAll() {
-        return companyJpaRepository.findAll().stream()
-                .map(companyMapper::toDomain)
-                .toList();
+        return companyJpaRepository.findAll().stream().map(companyMapper::toDomain).toList();
     }
 
     @Override

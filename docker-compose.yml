@@ -50,6 +50,20 @@ services:
     networks:
       - micro-network
 
+
+  micro-company:
+    build:
+      context: ./micro-company # Aponta para a pasta com o Dockerfile do serviço
+    container_name: micro-company
+    ports:
+      - "8081:8081" # Expõe a porta 8081 para você acessar da sua máquina
+    networks:
+      - micro-network
+    depends_on: # Garante que o micro-company só suba depois da infraestrutura essencial
+      - postgres
+      - eureka-server
+      - config-server
+
 # Bloco de volumes para persistência de dados
 volumes:
   postgres_data:

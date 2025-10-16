@@ -38,7 +38,7 @@ public interface CompanyService {
      *
      * @param id The company ID
      * @return The company with the given ID
-     * @throws com.ocoelhogabriel.manager_user_security.domain.exception.ResourceNotFoundException if company not found
+     * @throws com.ocoelhogabriel.microcompany.domain.exception.ResourceNotFoundException if company not found
      */
     Company getCompanyById(Long id);
 
