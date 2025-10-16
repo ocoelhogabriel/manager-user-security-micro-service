@@ -1,5 +1,3 @@
-# A linha "version" não é mais necessária e foi removida.
-
 services:
   postgres:
     image: postgres:16
@@ -14,6 +12,12 @@ services:
       - postgres_data:/var/lib/postgresql/data
     networks:
       - micro-network
+    # Healthcheck para o banco de dados
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U user -d company_db"]
+      interval: 10s
+      timeout: 5s
+      retries: 5
 
   rabbitmq:
     image: rabbitmq:3.10-management-alpine
@@ -26,41 +30,49 @@ services:
 
   config-server:
     build:
-      # Mantém a versão corrigida com a variável de ambiente.
-      context: ${PROJECT_ROOT}/infra/config-server
-      args:
-        - CONFIG_REPO_PATH=${PROJECT_ROOT}/infra/config-server/config-repo # Ajustado para a nova localização
+      context: ./infra/config-server
     container_name: config-server
     ports:
       - "8888:8888"
     networks:
       - micro-network
+    # Healthcheck para o Config Server (espera a porta 8888 estar acessível)
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8888/actuator/health"]
+      interval: 10s
+      timeout: 5s
+      retries: 12 # Tenta por até 2 minutos
 
   eureka-server:
     build:
-      # AJUSTE: Usa a variável de ambiente para garantir o caminho absoluto.
-      context: ${PROJECT_ROOT}/infra/eureka-server
+      context: ./infra/eureka-server
     container_name: eureka-server
     ports:
       - "8761:8761"
-    depends_on:
-      - config-server
     networks:
       - micro-network
+    # Agora, depende da SAÚDE do config-server
+    depends_on:
+      config-server:
+        condition: service_healthy
 
   micro-company:
     build:
-      # AJUSTE: Usa a variável de ambiente para garantir o caminho absoluto.
-      context: ${PROJECT_ROOT}/micro-company
+      context: ./micro-company
     container_name: micro-company
     ports:
       - "8081:8081"
     networks:
       - micro-network
+    # Agora, depende da SAÚDE dos outros serviços
     depends_on:
-      - postgres
-      - eureka-server
-      - config-server
+      postgres:
+        condition: service_healthy
+      config-server:
+        condition: service_healthy
+      eureka-server:
+        # Eureka não precisa de healthcheck aqui, pois já depende do config-server
+        condition: service_started
 
 volumes:
   postgres_data:
