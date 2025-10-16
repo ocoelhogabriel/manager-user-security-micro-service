@@ -4,10 +4,10 @@ spring:
 server:
   port: 8761
 
-# Configurações do Eureka Server
+# Configuracoes do Eureka Server
 eureka:
   client:
-    # O servidor não deve se registrar com ele mesmo
+    # O servidor nao deve se registrar com ele mesmo
     register-with-eureka: false
-    # O servidor não busca o registro de outros lugares, ele É o registro
+    # O servidor nao busca o registro de outros lugares, ele e o registro
     fetch-registry: false

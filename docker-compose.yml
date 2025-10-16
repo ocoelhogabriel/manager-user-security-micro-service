@@ -5,7 +5,7 @@ services:
 
   # --- BANCO DE DADOS E MENSAGERIA (IMAGENS PRONTAS) ---
   postgres:
-    image: postgres:14-alpine
+    image: postgres:16
     container_name: postgres
     environment:
       - POSTGRES_USER=user
@@ -30,7 +30,9 @@ services:
   # --- SERVIÇOS DE INFRA (IMAGENS CONSTRUÍDAS POR NÓS) ---
   config-server:
     build:
-      context: ./infra/config-server # Aponta para a pasta com o Dockerfile
+      context: ${PROJECT_ROOT}/infra/config-server # Caminho absoluto para o contexto
+      args: # Argumentos que vamos passar para o Dockerfile
+        - CONFIG_REPO_PATH=${PROJECT_ROOT}/config-repo # Caminho absoluto para o config-repo
     container_name: config-server
     ports:
       - "8888:8888"

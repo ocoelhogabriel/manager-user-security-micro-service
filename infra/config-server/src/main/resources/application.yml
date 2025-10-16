@@ -3,15 +3,15 @@ server:
 
 spring:
   application:
-    name: config-server # Nome que ele usará para se registrar no Eureka
+    name: config-server # Nome que ele usarï¿½ para se registrar no Eureka
 
   cloud:
     config:
       server:
         git:
           # Para desenvolvimento local, apontamos para a pasta local.
-          # O Dockerfile garantirá que esta pasta exista dentro do container.
+          # O Dockerfile garantir que esta pasta exista dentro do container.
           uri: file:///app/config-repo
-          # Em produção, você substituiria por uma URL do GitHub/GitLab:
+          # Em producao, voce substituiria por uma URL do GitHub/GitLab:
           # uri: https://github.com/seu-usuario/manager-user-security-micro-service-config.git
           clone-on-start: true
