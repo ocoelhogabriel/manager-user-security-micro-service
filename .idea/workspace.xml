@@ -1,0 +1,290 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="8a871a7a-e408-4cb1-8ca2-b2c196572cfc" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/domain/entity/Company.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/domain/repository/CompanyRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/infrastructure/persistence/repository/CompanyJpaRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/service/CompanyService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/manager-user-security-micro-service.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/manager-user-security-micro-service.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/pom.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/UserSecurityApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/dto/TokenDetails.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/exception/ApplicationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/exception/ExternalServiceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/exception/InvalidOperationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/service/AuthenticationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/service/AuthorizationServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/service/CompanyServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/service/CoverageServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/service/LoggerServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/service/PermissionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/service/PlantServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/service/ResourceServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/service/RolePermissionServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/service/RoleServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/service/UrlValidationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/micro-company/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/service/UserServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/application/validator/UrlValidator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/entity/Company.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/entity/Coverage.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/entity/Logger.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/entity/Permission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/entity/Plant.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/entity/Resource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/entity/Role.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/entity/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/exception/AuthenticationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/exception/AuthorizationException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/exception/DomainException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/exception/DuplicateResourceException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/exception/ResourceNotFoundException.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/repository/CompanyRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/repository/CoverageRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/repository/LoggerRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/repository/PermissionRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/repository/PlantRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/repository/Repository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/repository/ResourceRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/repository/RoleRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/repository/UserRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/service/AuthenticationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/service/AuthorizationService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/service/CompanyService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/service/CoverageService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/service/LoggerService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/service/PermissionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/service/PlantService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/service/ResourceService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/service/RolePermissionService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/service/RoleService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/service/UserService.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/valueobject/HttpMethod.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/domain/valueobject/LoggerType.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/config/OpenApiConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/TestUserDataInitializer.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/adapter/CompanyRepositoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/adapter/CoverageRepositoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/adapter/LoggerRepositoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/adapter/PermissionRepositoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/adapter/PlantRepositoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/adapter/ResourceRepositoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/adapter/RoleRepositoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/adapter/UserRepositoryAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/config/AuditorAwareImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/config/PersistenceConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/entity/CompanyEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/infrastructure/persistence/entity/CompanyEntity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/entity/CoverageEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/entity/LoggerEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/entity/PermissionEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/entity/PlantEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/entity/ResourceEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/entity/RoleEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/entity/UserEntity.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/repository/CompanyJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/repository/CoverageJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/repository/LoggerJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/repository/PermissionJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/repository/PlantJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/repository/ResourceJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/repository/RoleJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/repository/UserJpaRepository.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/repository/impl/CoverageRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/persistence/repository/impl/LoggerRepositoryImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/SecurityConfig.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/authorization/Permission.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/authorization/PermissionEvaluator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/authorization/Resource.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/authorization/UrlPathMatcher.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/authorization/model/PermissionModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/authorization/model/ResourceModel.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/filter/JwtAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/handler/CustomAccessDeniedHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/handler/CustomAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/jwt/JwtAuthenticationFilter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/jwt/JwtManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/mapper/SecurityPermissionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/permission/CustomPermissionEvaluator.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/permission/CustomSecurityExpression.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/service/ResourceServiceAdapter.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/service/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/infrastructure/security/util/SecurityConstants.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/advice/GlobalExceptionHandler.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/controllers/CompanyController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/controllers/CoverageController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/controllers/LoggerController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/controllers/PlantController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/controllers/UserController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/controllers/auth/AuthenticationController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/AuthenticationRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/AuthenticationResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/CompanyRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/CompanyResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/CompanyUpdateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/CoverageRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/CoverageResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/CoverageUpdateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/CreateUserRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/ErrorResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/LoggerRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/LoggerResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/PlantRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/PlantResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/PlantUpdateRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/TokenValidationResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/UpdatePasswordRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/UpdateUserRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/UserResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/UserRoleDto.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/permission/CreatePermissionRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/permission/PermissionResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/permission/UpdatePermissionRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/resource/CreateResourceRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/resource/ResourceResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/resource/UpdateResourceRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/role/AddPermissionRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/role/CreateRoleRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/role/RoleResponse.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/dto/role/UpdateRoleRequest.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/mapper/CompanyMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/mapper/CoverageMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/mapper/LoggerMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/mapper/PermissionMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/mapper/PlantMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/mapper/ResourceMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/mapper/RoleMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/java/com/ocoelhogabriel/manager_user_security/interfaces/mapper/UserMapper.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/target/classes/META-INF/build-info.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Monolitico/target/classes/application.properties" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="Interface" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="KubernetesApiPersistence"><![CDATA[{}]]></component>
+  <component name="KubernetesApiProvider"><![CDATA[{
+  "isMigrated": true
+}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
+  <component name="ProjectId" id="349xhpb0eHAmmAwobrleMKR6YO5" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "E:/developer/repository/ocoelhogabriel/manager-user-security-micro-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "vue.rearranger.settings.migration": "true"
+  },
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
+    ]
+  }
+}]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\developer\repository\ocoelhogabriel\manager-user-security-micro-service\micro-company\src\main\java\com\ocoelhogabriel\microcompany\infrastructure\persistence\entity" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="configurationTypes">
+      <set>
+        <option value="KtorApplicationConfigurationType" />
+        <option value="MicronautRunConfigurationType" />
+        <option value="QuarkusRunConfigurationType" />
+        <option value="SpringBootApplicationConfigurationType" />
+      </set>
+    </option>
+  </component>
+  <component name="RunManager" selected="Spring Boot.ConfigServerApplication">
+    <configuration name="ConfigServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="config-server" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocoelhogabriel.configserver.ConfigServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroCompanyApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="micro-company" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocoelhogabriel.microcompany.MicroCompanyApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="UserSecurityApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
+      <module name="manager_user_security" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocoelhogabriel.manager_user_security.UserSecurityApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-bf35d07a577b-intellij.indexing.shared.core-IU-252.26830.84" />
+        <option value="bundled-js-predefined-d6986cc7102b-3aa1da707db6-JavaScript-IU-252.26830.84" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8a871a7a-e408-4cb1-8ca2-b2c196572cfc" name="Changes" comment="" />
+      <created>1760639713831</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1760639713831</updated>
+      <workItem from="1760639715135" duration="104000" />
+      <workItem from="1760639830315" duration="1118000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
