@@ -1,0 +1,27 @@
+# Estágio 1: Build da aplicação com Maven e Java 21
+FROM maven:3.9-eclipse-temurin-21 AS build
+
+# Define o diretório de trabalho dentro do container
+WORKDIR /app
+
+# Copia o pom.xml para baixar as dependências primeiro (cache do Docker)
+COPY pom.xml .
+# Copia o resto do código fonte
+COPY src ./src
+
+# Executa o build do Maven para gerar o .jar
+RUN mvn clean package -DskipTests
+
+# Estágio 2: Imagem final, otimizada e leve
+FROM eclipse-temurin:21-jre-jammy
+
+WORKDIR /app
+
+# Copia apenas o .jar gerado do estágio de build para a imagem final
+COPY --from=build /app/target/*.jar app.jar
+
+# Expõe a porta que a aplicação vai usar
+EXPOSE 8761
+
+# Comando para iniciar a aplicação quando o container subir
+ENTRYPOINT ["java", "-jar", "app.jar"]

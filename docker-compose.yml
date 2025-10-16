@@ -1,0 +1,58 @@
+version: '3.8'
+
+# Bloco de serviços, onde cada container é definido
+services:
+
+  # --- BANCO DE DADOS E MENSAGERIA (IMAGENS PRONTAS) ---
+  postgres:
+    image: postgres:14-alpine
+    container_name: postgres
+    environment:
+      - POSTGRES_USER=user
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=company_db # DB inicial para o micro-company
+    ports:
+      - "5432:5432" # Mapeia a porta do container para sua máquina local
+    volumes:
+      - postgres_data:/var/lib/postgresql/data # Garante que os dados não se percam
+    networks:
+      - micro-network
+
+  rabbitmq:
+    image: rabbitmq:3.10-management-alpine
+    container_name: rabbitmq
+    ports:
+      - "5672:5672"  # Porta do protocolo AMQP
+      - "15672:15672" # Porta da UI de gerenciamento
+    networks:
+      - micro-network
+
+  # --- SERVIÇOS DE INFRA (IMAGENS CONSTRUÍDAS POR NÓS) ---
+  config-server:
+    build:
+      context: ./infra/config-server # Aponta para a pasta com o Dockerfile
+    container_name: config-server
+    ports:
+      - "8888:8888"
+    networks:
+      - micro-network
+
+  eureka-server:
+    build:
+      context: ./infra/eureka-server
+    container_name: eureka-server
+    ports:
+      - "8761:8761"
+    depends_on:
+      - config-server # Garante que o config-server suba antes do eureka-server
+    networks:
+      - micro-network
+
+# Bloco de volumes para persistência de dados
+volumes:
+  postgres_data:
+
+# Bloco de redes para permitir a comunicação entre os containers pelo nome do serviço
+networks:
+  micro-network:
+    driver: bridge

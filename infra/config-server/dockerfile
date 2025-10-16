@@ -1,0 +1,27 @@
+# Estágio 1: Build da aplicação com Maven e Java 21
+FROM maven:3.9-eclipse-temurin-21 AS build
+
+WORKDIR /app
+
+COPY pom.xml .
+COPY src ./src
+
+RUN mvn clean package -DskipTests
+
+# Estágio 2: Imagem final, otimizada e leve
+FROM eclipse-temurin:21-jre-jammy
+
+WORKDIR /app
+
+# PASSO CRÍTICO: Copia o repositório de configuração local para dentro da imagem.
+# O caminho '../../config-repo' é relativo à localização deste Dockerfile.
+COPY ../../config-repo ./config-repo
+
+# Copia o .jar gerado do estágio de build
+COPY --from=build /app/target/*.jar app.jar
+
+# Expõe a porta da aplicação
+EXPOSE 8888
+
+# Comando para iniciar a aplicação
+ENTRYPOINT ["java", "-jar", "app.jar"]
