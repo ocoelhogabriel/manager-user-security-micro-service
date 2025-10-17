@@ -1,6 +1,5 @@
 package com.ocoelhogabriel.microcompany.interfaces.controller;
 
-
 import com.ocoelhogabriel.microcompany.domain.entity.Company;
 import com.ocoelhogabriel.microcompany.domain.exception.ResourceNotFoundException;
 import com.ocoelhogabriel.microcompany.domain.service.CompanyService;
@@ -39,17 +38,11 @@ public class CompanyController {
     }
 
     @PostMapping
-    @Operation(
-            summary = "Create a new company",
-            description = "Creates a new company with the provided details",
-            responses = {
-                    @ApiResponse(responseCode = "201", description = "Company created successfully",
-                            content = @Content(schema = @Schema(implementation = CompanyResponse.class))),
-                    @ApiResponse(responseCode = "400", description = "Invalid input"),
-                    @ApiResponse(responseCode = "409", description = "Company with same CNPJ already exists"),
-                    @ApiResponse(responseCode = "403", description = "Forbidden")
-            }
-    )
+    @Operation(summary = "Create a new company", description = "Creates a new company with the provided details", responses = {
+            @ApiResponse(responseCode = "201", description = "Company created successfully", content = @Content(schema = @Schema(implementation = CompanyResponse.class))),
+            @ApiResponse(responseCode = "400", description = "Invalid input"),
+            @ApiResponse(responseCode = "409", description = "Company with same CNPJ already exists"),
+            @ApiResponse(responseCode = "403", description = "Forbidden") })
     public ResponseEntity<CompanyResponse> createCompany(@Valid @RequestBody CompanyRequest request) {
         Company company = companyMapper.toDomain(request);
         Company createdCompany = companyService.registerCompany(company);
@@ -58,18 +51,11 @@ public class CompanyController {
     }
 
     @PutMapping
-    @Operation(
-            summary = "Update an existing company",
-            description = "Updates an existing company with the provided details",
-            responses = {
-                    @ApiResponse(responseCode = "200", description = "Company updated successfully",
-                            content = @Content(schema = @Schema(implementation = CompanyResponse.class))),
-                    @ApiResponse(responseCode = "400", description = "Invalid input"),
-                    @ApiResponse(responseCode = "404", description = "Company not found"),
-                    @ApiResponse(responseCode = "409", description = "Company with same CNPJ already exists"),
-                    @ApiResponse(responseCode = "403", description = "Forbidden")
-            }
-    )
+    @Operation(summary = "Update an existing company", description = "Updates an existing company with the provided details", responses = {
+            @ApiResponse(responseCode = "200", description = "Company updated successfully", content = @Content(schema = @Schema(implementation = CompanyResponse.class))),
+            @ApiResponse(responseCode = "400", description = "Invalid input"), @ApiResponse(responseCode = "404", description = "Company not found"),
+            @ApiResponse(responseCode = "409", description = "Company with same CNPJ already exists"),
+            @ApiResponse(responseCode = "403", description = "Forbidden") })
     public ResponseEntity<CompanyResponse> updateCompany(@Valid @RequestBody CompanyUpdateRequest request) {
         Company company = companyMapper.toDomain(request);
         Company updatedCompany = companyService.updateCompany(company);
@@ -78,16 +64,9 @@ public class CompanyController {
     }
 
     @GetMapping("/{id}")
-    @Operation(
-            summary = "Get a company by ID",
-            description = "Returns a company based on the provided ID",
-            responses = {
-                    @ApiResponse(responseCode = "200", description = "Company found",
-                            content = @Content(schema = @Schema(implementation = CompanyResponse.class))),
-                    @ApiResponse(responseCode = "404", description = "Company not found"),
-                    @ApiResponse(responseCode = "403", description = "Forbidden")
-            }
-    )
+    @Operation(summary = "Get a company by ID", description = "Returns a company based on the provided ID", responses = {
+            @ApiResponse(responseCode = "200", description = "Company found", content = @Content(schema = @Schema(implementation = CompanyResponse.class))),
+            @ApiResponse(responseCode = "404", description = "Company not found"), @ApiResponse(responseCode = "403", description = "Forbidden") })
     public ResponseEntity<CompanyResponse> getCompany(@PathVariable Long id) {
         Company company = companyService.getCompanyById(id);
         CompanyResponse response = companyMapper.toResponse(company);
@@ -95,33 +74,19 @@ public class CompanyController {
     }
 
     @GetMapping("/cnpj/{cnpj}")
-    @Operation(
-            summary = "Get a company by CNPJ",
-            description = "Returns a company based on the provided CNPJ",
-            responses = {
-                    @ApiResponse(responseCode = "200", description = "Company found",
-                            content = @Content(schema = @Schema(implementation = CompanyResponse.class))),
-                    @ApiResponse(responseCode = "404", description = "Company not found"),
-                    @ApiResponse(responseCode = "403", description = "Forbidden")
-            }
-    )
+    @Operation(summary = "Get a company by CNPJ", description = "Returns a company based on the provided CNPJ", responses = {
+            @ApiResponse(responseCode = "200", description = "Company found", content = @Content(schema = @Schema(implementation = CompanyResponse.class))),
+            @ApiResponse(responseCode = "404", description = "Company not found"), @ApiResponse(responseCode = "403", description = "Forbidden") })
     public ResponseEntity<CompanyResponse> getCompanyByCnpj(@PathVariable String cnpj) {
-        Company company = companyService.findByCnpj(cnpj)
-                .orElseThrow(() -> new ResourceNotFoundException("Company not found with CNPJ: " + cnpj));
+        Company company = companyService.findByCnpj(cnpj).orElseThrow(() -> new ResourceNotFoundException("Company not found with CNPJ: " + cnpj));
         CompanyResponse response = companyMapper.toResponse(company);
         return ResponseEntity.ok(response);
     }
 
     @GetMapping
-    @Operation(
-            summary = "Get all companies",
-            description = "Returns a list of all companies",
-            responses = {
-                    @ApiResponse(responseCode = "200", description = "List of companies",
-                            content = @Content(schema = @Schema(implementation = CompanyResponse.class))),
-                    @ApiResponse(responseCode = "403", description = "Forbidden")
-            }
-    )
+    @Operation(summary = "Get all companies", description = "Returns a list of all companies", responses = {
+            @ApiResponse(responseCode = "200", description = "List of companies", content = @Content(schema = @Schema(implementation = CompanyResponse.class))),
+            @ApiResponse(responseCode = "403", description = "Forbidden") })
     public ResponseEntity<List<CompanyResponse>> getAllCompanies() {
         List<Company> companies = companyService.findAllCompanies();
         List<CompanyResponse> responses = companyMapper.toResponseList(companies);
@@ -129,15 +94,9 @@ public class CompanyController {
     }
 
     @DeleteMapping("/{id}")
-    @Operation(
-            summary = "Delete a company",
-            description = "Deletes a company based on the provided ID",
-            responses = {
-                    @ApiResponse(responseCode = "204", description = "Company deleted successfully"),
-                    @ApiResponse(responseCode = "404", description = "Company not found"),
-                    @ApiResponse(responseCode = "403", description = "Forbidden")
-            }
-    )
+    @Operation(summary = "Delete a company", description = "Deletes a company based on the provided ID", responses = {
+            @ApiResponse(responseCode = "204", description = "Company deleted successfully"),
+            @ApiResponse(responseCode = "404", description = "Company not found"), @ApiResponse(responseCode = "403", description = "Forbidden") })
     public ResponseEntity<Void> deleteCompany(@PathVariable Long id) {
         companyService.deleteCompany(id);
         return ResponseEntity.noContent().build();
