@@ -5,11 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="8a871a7a-e408-4cb1-8ca2-b2c196572cfc" name="Changes" comment="Micro-company sync">
+      <change afterPath="$PROJECT_DIR$/infra/config-server/config-repo/microauth.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/java/com/ocoelhogabriel/microauth/application/dto/TokenDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/java/com/ocoelhogabriel/microauth/application/exception/ApplicationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/java/com/ocoelhogabriel/microauth/application/exception/ExternalServiceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/java/com/ocoelhogabriel/microauth/application/exception/InvalidOperationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/java/com/ocoelhogabriel/microauth/domain/exception/AuthenticationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/java/com/ocoelhogabriel/microauth/domain/exception/AuthorizationException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/java/com/ocoelhogabriel/microauth/domain/exception/DomainException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/java/com/ocoelhogabriel/microauth/domain/exception/DuplicateResourceException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/java/com/ocoelhogabriel/microauth/domain/exception/ResourceNotFoundException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/java/com/ocoelhogabriel/microauth/infrastructure/amqp/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/java/com/ocoelhogabriel/microauth/interfaces/advice/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/java/com/ocoelhogabriel/microauth/interfaces/dto/ErrorResponse.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-auth/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/infrastructure/amqp/RabbitMQConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/interfaces/dto/CompanyEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/config-server/config-repo/micro-company.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/config-server/config-repo/micro-company.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micro-company/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micro-company/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micro-company/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micro-company/src/main/resources/bootstrap.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/config-server/config-repo/micro-company.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/application/service/CompanyServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/application/service/CompanyServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -21,6 +40,7 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="Record" />
       </list>
     </option>
   </component>
@@ -68,19 +88,19 @@
     "git-widget-placeholder": "main",
     "ignore.virus.scanning.warn.message": "true",
     "kotlin-language-version-configured": "true",
-    "last_directory_selection": "D:/developer/repositorys/OCoelhoGabriel/manager-user-security-micro-service/micro-company/src/main/java/com/ocoelhogabriel/microcompany",
-    "last_opened_file_path": "D:/developer/repositorys/OCoelhoGabriel/manager-user-security-micro-service",
+    "last_directory_selection": "D:/developer/repositorys/OCoelhoGabriel/manager-user-security-micro-service/micro-auth/src/main/java/com/ocoelhogabriel/microauth",
+    "last_opened_file_path": "D:/developer/repositorys/OCoelhoGabriel/manager-user-security-micro-service/infra/config-server/config-repo",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Libraries",
+    "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.15",
     "project.structure.side.proportion": "0.2",
     "run.code.analysis.last.selected.profile": "pProject Default",
     "run.configurations.included.in.services": "true",
-    "settings.editor.selected.configurable": "com.intellij.mcpserver.settings",
+    "settings.editor.selected.configurable": "reference.settingsdialog.project.grazie",
     "vue.rearranger.settings.migration": "true"
   },
   "keyToStringList": {
@@ -91,12 +111,16 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\developer\repositorys\OCoelhoGabriel\manager-user-security-micro-service\infra\config-server\config-repo" />
+      <recent name="D:\developer\repositorys\OCoelhoGabriel\manager-user-security-micro-service\micro-auth\src\main\resources" />
+      <recent name="D:\developer\repositorys\OCoelhoGabriel\manager-user-security-micro-service\micro-auth\src\main\java\com\ocoelhogabriel\microauth" />
       <recent name="D:\developer\repositorys\OCoelhoGabriel\manager-user-security-micro-service" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="E:\developer\repository\ocoelhogabriel\manager-user-security-micro-service\micro-company\src\main\java\com\ocoelhogabriel\microcompany\infrastructure\persistence\entity" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.ocoelhogabriel.microauth.application.dto" />
       <recent name="com.ocoelhogabriel.microcompany.interfaces.advice" />
     </key>
   </component>
@@ -121,6 +145,13 @@
     <configuration name="EurekaServerApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
       <module name="eureka-server" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocoelhogabriel.eurekaserver.EurekaServerApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MicroAuthApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
+      <module name="micro-auth" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ocoelhogabriel.microauth.MicroAuthApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -159,7 +190,10 @@
       <workItem from="1760639715135" duration="104000" />
       <workItem from="1760639830315" duration="1118000" />
       <workItem from="1760650605619" duration="9042000" />
-      <workItem from="1760661181699" duration="8707000" />
+      <workItem from="1760661181699" duration="11299000" />
+      <workItem from="1760708901911" duration="483000" />
+      <workItem from="1760714745097" duration="820000" />
+      <workItem from="1760724832646" duration="3891000" />
     </task>
     <task id="LOCAL-00001" summary="implement company CRUD API with service, controller, mapper, and global exception handling; add MapStruct and OpenAPI dependencies">
       <option name="closed" value="true" />

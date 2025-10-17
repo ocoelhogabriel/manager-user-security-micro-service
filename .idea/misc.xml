@@ -8,6 +8,7 @@
         <option value="$PROJECT_DIR$/infra/eureka-server/pom.xml" />
         <option value="$PROJECT_DIR$/Monolitico/pom.xml" />
         <option value="$PROJECT_DIR$/micro-company/pom.xml" />
+        <option value="$PROJECT_DIR$/micro-auth/pom.xml" />
       </list>
     </option>
     <option name="ignoredFiles">
