@@ -4,13 +4,12 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="8a871a7a-e408-4cb1-8ca2-b2c196572cfc" name="Changes" comment="Micro-company">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+    <list default="true" id="8a871a7a-e408-4cb1-8ca2-b2c196572cfc" name="Changes" comment="Micro-company sync">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/infra/config-server/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/config-server/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/MicroCompanyApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/MicroCompanyApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/interfaces/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/micro-company/src/main/java/com/ocoelhogabriel/microcompany/interfaces/controller/CompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/micro-company/src/main/resources/application.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/infra/config-server/config-repo/micro-company.yml" beforeDir="false" afterPath="$PROJECT_DIR$/infra/config-server/config-repo/micro-company.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micro-company/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micro-company/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/micro-company/src/main/resources/bootstrap.yml" beforeDir="false" afterPath="$PROJECT_DIR$/micro-company/src/main/resources/bootstrap.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,38 +57,38 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_directory_selection&quot;: &quot;D:/developer/repositorys/OCoelhoGabriel/manager-user-security-micro-service/micro-company/src/main/java/com/ocoelhogabriel/microcompany&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/developer/repositorys/OCoelhoGabriel/manager-user-security-micro-service&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
-    &quot;run.code.analysis.last.selected.profile&quot;: &quot;pProject Default&quot;,
-    &quot;run.configurations.included.in.services&quot;: &quot;true&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ModuleVcsDetector.initialDetectionPerformed": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "kotlin-language-version-configured": "true",
+    "last_directory_selection": "D:/developer/repositorys/OCoelhoGabriel/manager-user-security-micro-service/micro-company/src/main/java/com/ocoelhogabriel/microcompany",
+    "last_opened_file_path": "D:/developer/repositorys/OCoelhoGabriel/manager-user-security-micro-service",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Libraries",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "run.code.analysis.last.selected.profile": "pProject Default",
+    "run.configurations.included.in.services": "true",
+    "settings.editor.selected.configurable": "com.intellij.mcpserver.settings",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;postgresql&quot;
+  "keyToStringList": {
+    "DatabaseDriversLRU": [
+      "postgresql"
     ]
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\developer\repositorys\OCoelhoGabriel\manager-user-security-micro-service" />
@@ -160,7 +159,7 @@
       <workItem from="1760639715135" duration="104000" />
       <workItem from="1760639830315" duration="1118000" />
       <workItem from="1760650605619" duration="9042000" />
-      <workItem from="1760661181699" duration="2760000" />
+      <workItem from="1760661181699" duration="8707000" />
     </task>
     <task id="LOCAL-00001" summary="implement company CRUD API with service, controller, mapper, and global exception handling; add MapStruct and OpenAPI dependencies">
       <option name="closed" value="true" />
@@ -186,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1760658301439</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Micro-company sync">
+      <option name="closed" value="true" />
+      <created>1760664582605</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1760664582605</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -195,6 +202,11 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="implement company CRUD API with service, controller, mapper, and global exception handling; add MapStruct and OpenAPI dependencies" />
     <MESSAGE value="Micro-company" />
-    <option name="LAST_COMMIT_MESSAGE" value="Micro-company" />
+    <MESSAGE value="Micro-company sync" />
+    <option name="LAST_COMMIT_MESSAGE" value="Micro-company sync" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>

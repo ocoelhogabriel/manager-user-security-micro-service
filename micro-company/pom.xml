@@ -9,10 +9,10 @@
         <relativePath/>
     </parent>
     <groupId>com.ocoelhogabriel</groupId>
-    <artifactId>micro-company</artifactId>
+    <artifactId>microcompany</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>micro-company</name>
-    <description>micro-company</description>
+    <name>microcompany</name>
+    <description>microcompany</description>
     <url/>
     <licenses>
         <license/>

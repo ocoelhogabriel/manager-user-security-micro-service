@@ -41,7 +41,7 @@ services:
       test: ["CMD", "curl", "-f", "http://localhost:8888/actuator/health"]
       interval: 10s
       timeout: 5s
-      retries: 12 # Tenta por até 2 minutos
+      retries: 30 # aumenta para até 5 minutos
 
   eureka-server:
     build:
@@ -56,12 +56,14 @@ services:
       config-server:
         condition: service_healthy
 
-  micro-company:
+  microcompany:
     build:
       context: ./micro-company
-    container_name: micro-company
+    container_name: microcompany
     ports:
       - "8081:8081"
+    environment:
+      - SPRING_CLOUD_CONFIG_URI=http://config-server:8888
     networks:
       - micro-network
     # Agora, depende da SAÚDE dos outros serviços

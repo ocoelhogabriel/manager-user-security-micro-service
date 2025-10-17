@@ -1,7 +1,9 @@
 spring:
   application:
-    name: micro-company # NOME LÓGICO DO SERVIÇO
+    name: microcompany
   cloud:
     config:
-      uri: http://config-server:8888 # Endereço do Config Server na rede Docker
-      fail-fast: true # Faz a aplicação falhar se não conseguir conectar no config-server
+      uri: http://config-server:8888
+      fail-fast: true
+  config:
+    import: "configserver:"
